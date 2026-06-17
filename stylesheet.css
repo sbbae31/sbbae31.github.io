@@ -103,10 +103,10 @@ h2 {
 }
 
 .name {
-  padding-top: 20px;
+  padding-top: 0;
   margin: 0;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
+  font-size: 28px;
 }
 
 .one {
