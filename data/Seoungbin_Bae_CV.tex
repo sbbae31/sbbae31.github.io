@@ -1,0 +1,124 @@
+\documentclass[10pt]{article}
+
+\usepackage[margin=0.65in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[normalem]{ulem}
+\usepackage[hidelinks]{hyperref}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.2em}
+\setlist[itemize]{leftmargin=1.2em, itemsep=0em, topsep=0em, parsep=0em, partopsep=0em}
+\setlist[enumerate]{leftmargin=1.5em, itemsep=0.25em, topsep=0.1em, parsep=0em, partopsep=0em}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{0.85em}{0.35em}
+\titleformat{\subsection}{\normalsize\bfseries}{}{0em}{}
+\titlespacing*{\subsection}{0pt}{0.35em}{0.15em}
+
+\newcommand{\entry}[4]{
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+    \textbf{#1} & #2 \\
+    #3 & #4
+  \end{tabular*}
+}
+
+\newcommand{\pub}[1]{\item #1}
+\newcommand{\cvtitle}[1]{\uline{#1}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE \textbf{Seoungbin Bae}}\\[0.12em]
+  Ph.D. Student, Department of Industrial \& Systems Engineering, KAIST\\
+  \href{mailto:sbbae31@gmail.com}{sbbae31@gmail.com} \,|\, \href{https://sbbae31.github.io/}{Homepage} \,|\, \href{https://scholar.google.com/citations?user=eyeMFY4AAAAJ\&hl=en}{Google Scholar} \,|\, \href{https://www.linkedin.com/in/seoungbin-bae-537336328}{LinkedIn}\\
+  Last updated: September 2026
+\end{center}
+
+\section*{Research Interests}
+\begin{itemize}
+  \item Machine learning for sequential decision-making under uncertainty
+  \item Online learning, bandit algorithms, and reinforcement learning with provable guarantees
+  \item Nonlinear contextual bandits, constrained reinforcement learning, and bandit algorithms for queueing systems
+\end{itemize}
+
+\section*{Education}
+\entry{KAIST}{2024--Present}{Ph.D. Student, Department of Industrial \& Systems Engineering}{}
+\begin{itemize}
+  \item Advisor: Prof. Dabeen Lee
+\end{itemize}
+
+\entry{KAIST}{2022--2024}{M.S. in Electrical Engineering}{}
+\begin{itemize}
+  \item Advisor: Prof. Young-Gyu Yoon
+  \item Research topic: self-supervised learning for microscopy image analysis
+  \item Thesis: Self-Supervised Cell Segmentation in Microscopy Images Through Transformation-Equivariance Learning
+\end{itemize}
+
+\entry{Department of Cyber Defense, Korea University}{2017--2021}{B.S.}{}
+
+\section*{Experience}
+\textbf{Research Intern, Department of Cyber Defense, Korea University}\hfill 2019--2021
+\begin{itemize}
+  \item Advisor: Prof. Wonjun Lee
+  \item Research topic: secure beamforming method in MU-MIMO networks
+\end{itemize}
+
+\section*{Publications}
+\textit{(*: equal contribution)}
+
+\subsection*{Preprints}
+\begin{enumerate}
+  \pub{\textbf{Seoungbin Bae} and Dabeen Lee, ``\cvtitle{Algorithm for Contextual Queueing Bandits with Rate-Optimal Queue Length Regret}'', arXiv preprint, 2026.}
+  \pub{Hoyeol Yoon, \textbf{Seoungbin Bae}, Nam Ho-Nguyen, and Dabeen Lee, ``\cvtitle{Chebyshev Center-Based Direction Selection for Multi-Objective Optimization and Training PINNs}'', arXiv preprint, 2026.}
+  \pub{\textbf{Seoungbin Bae} and Dabeen Lee, ``\cvtitle{Logistic Bandits with $\tilde{O}(\sqrt{dT})$ Regret Without Context Diversity Assumptions}'', arXiv preprint, 2026.}
+  \pub{\textbf{Seoungbin Bae}, Junyoung Son, and Dabeen Lee, ``\cvtitle{Learning to Route and Schedule LLMs from User Retrials via Contextual Queueing Bandits}'', arXiv preprint, 2026.}
+  \pub{Hyunwoo Kim*, \textbf{Seoungbin Bae*}, Junmo Cho, Hoyeon Nam, Junyoung Seo, Seungjae Han, Euiin Yi, Eunsu Kim, Young-Gyu Yoon, and Jae-Byum Chang, ``\cvtitle{IMPASTO: Multiplexed Cyclic Imaging Without Signal Removal via Self-Supervised Neural Unmixing}'', bioRxiv preprint, 2022.}
+\end{enumerate}
+
+\subsection*{Publications}
+\begin{enumerate}
+  \pub{Kihyun Yu, \textbf{Seoungbin Bae}, and Dabeen Lee, ``\cvtitle{Near-Optimal Primal-Dual Algorithm for Learning Linear Mixture CMDPs with Adversarial Rewards}'', \textbf{IEEE CDC}, 2026.}
+  \pub{\textbf{Seoungbin Bae} and Dabeen Lee, ``\cvtitle{Neural Logistic Bandits}'', \textbf{ICML}, 2026.}
+  \pub{Woonggi La*, \textbf{Seoungbin Bae*}, Junyoung Seo*, Hayeong Yu*, Junmo Cho, Hyunwoo Kim, Hoyeon Nam, Seungjae Han, Euiin Yi, Eunsu Kim, Chan Kang, Hyejin Shin, Chang Woo Song, Young-Gyu Yoon, and Jae-Byum Chang, ``\cvtitle{Abunmix Enables the Simple and Robust Multiplexed Immunofluorescence Imaging}'', \textbf{VIEW}, 2026.}
+  \pub{Kihyun Yu, \textbf{Seoungbin Bae}, and Dabeen Lee, ``\cvtitle{Primal-Dual Policy Optimization for Linear CMDPs with Adversarial Losses}'', \textbf{ICLR}, 2026.}
+  \pub{\textbf{Seoungbin Bae}, Garyeong Kang, and Dabeen Lee, ``\cvtitle{Queue Length Regret Bounds for Contextual Queueing Bandits}'', \textbf{ICLR}, 2026.}
+  \pub{Hyunwoo Kim, Joon-Goon Kim, Jueun Sim, Hoyeon Nam, In Cho, Hyejin Shin, Junyoung Kwon, Dae-Hyeon Song, \textbf{Seoungbin Bae}, Young-Gyu Yoon, Taeyun Ku, and Jae-Byum Chang, ``\cvtitle{Highly Accurate Image Registration for 3D Multiplexed Cyclic Imaging Using Dense Labeling in Expandable Tissue Gels}'', \textbf{PLOS Biology}, 2025.}
+  \pub{\textbf{Seoungbin Bae}, Minwoo Joo, and Wonjun Lee, ``\cvtitle{Secure Key Exchange Method via Ill-Conditioned Inverse Matrix in Wireless Local Area Networks}'', \textbf{KSC}, 2020.}
+  \pub{\textbf{Seoungbin Bae}, Youngki Kim, Heejun Roh, and Wonjun Lee, ``\cvtitle{Poster Abstract: Suppressing CSI Leakage in Multi-User MIMO Networks via Precoding}'', \textbf{IEEE INFOCOM Workshops}, 2020.}
+\end{enumerate}
+
+\subsection*{Patents}
+\begin{itemize}
+  \item \textbf{Seoungbin Bae} et al., Multiplexed Immunofluorescence Imaging via Signal Unmixing, Patent applications.
+\end{itemize}
+
+\section*{Teaching Experience}
+\begin{itemize}
+  \item Advanced Optimization for Data Science (DS801), Spring 2024
+  \item Matrix Computations for Signal Processing (EE548), Spring 2023
+  \item Introduction to Electronics Design Lab (EE305), Fall 2022, 2023
+  \item Wireless Mobile Communication Networks, Fall 2020
+\end{itemize}
+
+\section*{Academic Service}
+\begin{itemize}
+  \item Reviewer, NeurIPS 2026
+\end{itemize}
+
+\section*{Awards and Honors}
+\entry{The National Scholarship for Science and Engineering}{2017--2021}{Korea Student Aid Foundation (KOSAF)}{}
+\begin{itemize}
+  \item Full tuition during undergraduate years
+\end{itemize}
+
+\entry{Military Scholarship}{2017--2021}{Ministry of National Defense, Republic of Korea}{}
+\begin{itemize}
+  \item Full tuition during undergraduate years
+\end{itemize}
+
+\end{document}
